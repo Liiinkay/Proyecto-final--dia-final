@@ -1,0 +1,89 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right,#ee0979,#ff6a00) ;
+    padding: 15px;
+    height: auto;
+    min-height: 100%;
+}
+
+.container1{
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.textoES{
+    font-size: 30px;
+    background-color: rgb(26, 25, 25);
+    color:white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 4px;
+
+}
+.containerForm{
+    background-color: white;
+    padding:30px;
+    border-radius: 4px;
+}
+
+mat-label{
+    font-size:22px;
+    margin-bottom: 20px;
+}
+
+mat-label{
+    color:Black;
+}
+
+mat-select{
+    color:Black ;
+}
+
+input{
+    color:Black;
+}
+
+textarea{
+    position: initial;
+    background-color: white;
+}
+
+.controls{
+    width: 100%;
+    position:initial;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid linear-gradient(to right,#ee0979,#ff6a00) ;;
+    font-size: 18px;
+}
+
+button{
+    width: 100%;
+    background: black;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}

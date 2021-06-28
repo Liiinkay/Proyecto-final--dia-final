@@ -1,0 +1,83 @@
+<body>
+    <div class="container1">
+        <div class="textoES"><h1>Crear Cuenta</h1></div>
+        <div class="containerForm">
+            <form [formGroup]="formulario" (ngSubmit)="EnviarDatos()" ngNativeValidate >
+                <ul>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Nombres</mat-label>
+                            <textarea formControlName="nombres" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Apellidos</mat-label>
+                            <textarea formControlName="apellidos" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Rut</mat-label>
+                            <textarea formControlName="rut" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Correo</mat-label>
+                            <textarea formControlName="correo" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Password</mat-label>
+                            <textarea formControlName="password" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Direccion</mat-label>
+                            <textarea formControlName="direccion" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Region</mat-label>
+                            <mat-select  formControlName="region" required>
+                                <mat-option value="2">Alta</mat-option>
+                                <mat-option value="2">Media</mat-option>
+                                <mat-option value="3">Baja</mat-option>
+                                <mat-option value="4">Alta</mat-option>
+                                <mat-option value="5">Media</mat-option>
+                                <mat-option value="6">Baja</mat-option>
+                                <mat-option value="7">Alta</mat-option>
+                                <mat-option value="8">Media</mat-option>
+                                <mat-option value="9">Baja</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Comuna</mat-label>
+                            <mat-select  formControlName="comuna" required>
+                                <mat-option value="2">Alta</mat-option>
+                                <mat-option value="2">Media</mat-option>
+                                <mat-option value="3">Baja</mat-option>
+                                <mat-option value="4">Alta</mat-option>
+                                <mat-option value="5">Media</mat-option>
+                                <mat-option value="6">Baja</mat-option>
+                                <mat-option value="7">Alta</mat-option>
+                                <mat-option value="8">Media</mat-option>
+                                <mat-option value="9">Baja</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button type="submit" mat-raised-button>Crear</button>
+                    </li>  
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+</body>

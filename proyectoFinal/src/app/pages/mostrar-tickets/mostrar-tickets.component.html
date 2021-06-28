@@ -1,0 +1,57 @@
+<body>
+    <div class="mainBox">
+        <header>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Volver al Menu principal</button></a>
+            <a [routerLink]="['/mostrar-usuario']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Ver Usuarios</button></a>
+        </header>
+        <div class="ticketMainBox">
+            <div class="ticketMainText"><p>Solicitudes</p></div>
+            <ul>
+                <div class="ticketBox">
+                    <div class="ticketBox2">
+                        <div class="ticketAbierto"><p>Abierto</p></div>
+                        <li *ngFor="let item of lista1">
+                            <mat-divider></mat-divider> 
+                            <div class="ticketInsideBox">
+                                <p>Id: {{item.id}}</p>
+                                <p>Estado: {{item.estado}}</p>
+                                <p>Prioridad: {{item.prioridad}}</p>
+                                <p>Categoria: {{item.categoria}}</p>
+                                <p>Problema: {{item.asunto}}</p>
+                                <p>Descripcion: {{item.descripcion}}</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="ticketBox2">
+                        <div class="ticketDesarrollo"><p>En Desarrollo</p></div>
+                        <li *ngFor="let item of lista2 "> 
+                            <mat-divider></mat-divider>
+                            <div class="ticketInsideBox">
+                                <p>Id: {{item.id}}</p>
+                                <p>Estado: {{item.estado}}</p>
+                                <p>Prioridad: {{item.prioridad}}</p>
+                                <p>Categoria: {{item.categoria}}</p>
+                                <p>Problema: {{item.asunto}}</p>
+                                <p>Descripcion: {{item.descripcion}}</p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="ticketBox2">
+                        <div class="ticketCerrado"><p>Cerrado</p></div>
+                        <li *ngFor="let item of lista3 ">
+                            <mat-divider></mat-divider>
+                            <div class="ticketInsideBox">
+                                <p>Id: {{item.id}}</p>
+                                <p>Estado: {{item.estado}}</p>
+                                <p>Prioridad: {{item.prioridad}}</p>
+                                <p>Categoria: {{item.categoria}}</p>
+                                <p>Problema: {{item.asunto}}</p>
+                                <p>Descripcion: {{item.descripcion}}</p>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>

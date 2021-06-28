@@ -1,0 +1,30 @@
+<form [formGroup]="formulario" (submit)="buscarTickets()">
+    
+    <label for="prioridad">Ingrese prioridad de los tickets que quiere buscar!</label>
+    <br>
+    <br>
+    <select id="prioridad" formControlName="prioridad">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <br><br>
+    <br>
+    <button>Buscar</button>
+</form>
+
+<table>
+    <tr>
+        <th>Estado</th>
+        <th>Categoria</th>
+        <th>Asunto</th>
+        <th>Descripcion</th>
+    </tr>
+    <tr *ngFor="let item of lista | filtrarPorPrioridad:buscarDato">
+        <td>{{item.estado}}</td>
+        <td>{{item.Categoria}}</td>
+        <td>{{item.asunto}}</td>
+        <td>{{item.descripcion}}</td>
+    </tr>
+</table>
+

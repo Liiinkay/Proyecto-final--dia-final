@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right,#ee0979,#ff6a00) ;
+    overflow-wrap: break-word;
+    height: auto;
+    min-height: 100%;
+}
+
+header{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+ul{
+    display: flex;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.mainBox{
+    width: 60%;
+}
+
+.ticketMainBox{
+    width: 100%;
+    background-color: #24303c;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 100px;
+}
+
+.ticketBox{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.ticketBox2{
+    width: 300px;
+    background-color: white;
+    margin: 3px;
+}
+
+.ticketAbierto{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(68, 190, 68);
+}
+
+.ticketDesarrollo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 241, 88);
+}
+
+.ticketCerrado{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(231, 71, 71);
+}
+
+.ticketInsideBox{
+    margin: 2px 0;
+    padding: 2px;
+}
+
+.ticketMainText{
+    font-size: 30px;
+    background-color: rgb(26, 25, 25);
+    color:white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+header button{
+    padding: 10px 40px;
+    font-size: 30px;
+    margin: 20px 30px;
+    font-size: 16px;
+}

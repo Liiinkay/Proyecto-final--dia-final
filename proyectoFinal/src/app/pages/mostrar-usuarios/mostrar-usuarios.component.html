@@ -1,0 +1,22 @@
+<body>
+    <div class="mainBox">
+        <header>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Volver al Menu principal</button></a>
+            <a [routerLink]="['/mostrar-ticket']" routerLinkActive="router-link-active" ><button type="submit" mat-raised-button>Ver Solicitudes</button></a>
+        </header>
+        <div class="usuariosMainBox">
+            <div class="usuariosMainText"><p>Usuarios</p></div>
+            <ul>
+                <div class="usuariosBox">
+                    <li *ngFor="let item of lista">
+                        <div class="usuariosInsideBox">
+                            <p>Nombres: {{item.nombres}}</p>
+                            <p>Apellidos: {{item.apellidos}}</p>
+                            <p>Correo: {{item.correo}}</p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,50 @@
+<body>
+    <div class="container1">
+        <div class="textoES"><h1>Enviar Solicitud</h1></div>
+        <div class="containerForm">
+            <form [formGroup]="formulario" (ngSubmit)="EnviarDatos()" ngNativeValidate >
+                <ul>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Prioridad</mat-label>
+                            <mat-select  formControlName="prioridad" required>
+                                <mat-option value="1">Alta</mat-option>
+                                <mat-option value="2">Media</mat-option>
+                                <mat-option value="3">Baja</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Categoria</mat-label>
+                            <mat-select  formControlName="categoria" required>
+                                <mat-option value="1">Solicitud de Generica</mat-option>
+                                <mat-option value="2">Solicitud de Cambio</mat-option>
+                                <mat-option value="3">Incidente</mat-option>
+                                <mat-option value="4">Problema</mat-option>
+                                <mat-option value="5">Solicitud de Hardware Nuevo</mat-option>
+                                <mat-option value="6">Solicitud de Software Nuevo</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Asunto</mat-label>
+                            <textarea formControlName="asunto" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <mat-form-field class="controls" appearance="fill">
+                            <mat-label>Descripcion</mat-label>
+                            <textarea formControlName="descripcion" matInput required></textarea>
+                        </mat-form-field>
+                    </li>
+                    <li>
+                        <button type="submit" mat-raised-button>Enviar Solicitud</button>
+                    </li>  
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+</body>
